@@ -42,12 +42,12 @@
     transform: translate(-50%,-50%);
    }
     .main_content {
-    height: 800px;
-    width: 70%;
+    height: 1200px;
+    width: 60%;
     background: #ccc;
     border: solid 1px black;
-    text-align: center;
-    margin: 0 auto;
+    left: 0;
+    margin: auto;
     margin-top: 5px;
    }
     .footer {
@@ -75,24 +75,47 @@
     </table>
  </div>
 
- <div class="middle_block"><h3>Финансовый инструмент: EUR-USD</h3>
-    <p style="text-align:center"><img src="\static\recommendation.png" alt="recommendation" width="380" height="150">
+ <div class="middle_block">
+    <h4 style="margin:5px">Финансовый инструмент: EUR-USD</h4>
+    <p style="margin:10px">Рекомендация к торговле на ближайший период</p>
+    <p style="text-align:center; margin-top:5px"><img src="\static\recommendation.png" alt="recommendation" width="380" height="150">
     <div class="left_middle">
-    Lorem ipsum dolor sit amet, consectetuer
+        Lorem ipsum dolor sit amet, consectetuer
     </div>
     <div class="right_middle">
-    Lorem ipsum dolor sit amet, consectetuer
+        Lorem ipsum dolor sit amet, consectetuer
     </div>
  </div>
 
  <div class="main_content">
-Lorem ipsum dolor sit amet, consectetuer
-adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet
-dolore magna aliguam erat volutpat.
+     <p style="text-align:center; margin-top:5px; margin-bottom:10px; font-size: 20px; font-family: Microsoft JhengHei Light;">График инструмента за выбранный период<br></p>
+     <p style="text-align:center; margin-top:5px; margin-bottom:5px"><img src="\static\main_y.png" alt="main_plot" width="700" height="280">
+     <p style="margin-top:5px; margin-bottom:5px; margin-left:7%; font-size: 12px; font-family: Microsoft JhengHei Light;">Обозначения:</p>
+    <ul style="margin-top:5px; margin-left:7%; font-size: 12px; font-family: Microsoft JhengHei Light;">
+        <li>Close - цена закрытия актива</li>
+        <li>BBU - верхняя полоса Боллинджера</li>
+        <li>BBL - нижняя полоса Боллинджера</li>
+        <li>Short - быстрое экспоненциальное скользящее среднее (P=3)</li>
+        <li>Long - медленное экспоненциальное скользящее среднее (P=9)</li>
+    </ul>
+
+    <p style="text-align:center; margin-top:5px; margin-bottom:10px; font-size: 20px; font-family: Microsoft JhengHei Light;">График инструмента за выбранный период<br></p>
+    <p style="text-align:center; margin-top:5px; margin-bottom:5px"><img src="\static\stoch_y.png" alt="main_plot" width="700" height="280">
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:7%; font-size: 12px; font-family: Microsoft JhengHei Light;">Обозначения:</p>
+    <ul style="margin-top:5px; margin-left:7%; font-size: 12px; font-family: Microsoft JhengHei Light;">
+        <li>STHST_k - быстрая стохастическая кривая</li>
+        <li>STHST_d - медленная стохастическая кривая</li>
+    </ul>
+
+    <p style="text-align:center; margin-top:5px; margin-bottom:10px; font-size: 20px; font-family: Microsoft JhengHei Light;">График инструмента за выбранный период<br></p>
+    <p style="text-align:center; margin-top:5px; margin-bottom:5px"><img src="\static\obv_y.png" alt="main_plot" width="700" height="280">
+    <p style="margin-top:5px; margin-bottom:5px; margin-left:7%; font-size: 12px; font-family: Microsoft JhengHei Light;">Обозначения:</p>
+    <ul style="margin-top:5px; margin-left:7%; font-size: 12px; font-family: Microsoft JhengHei Light;">
+        <li>OBV - индекс объемов торгов</li>
+    </ul>
  </div>
 
- <div class="footer">Биржевой портал. Сделано в МГТУ им.Н.Э.Баумана, кафедра ИУ5 в 2020 году.<br>Багавиев Б.И.
- </div>
+ <div class="footer">Биржевой портал. Сделано в МГТУ им.Н.Э.Баумана, кафедра ИУ5 в 2020 году.<br>Багавиев Б.И.</div>
 
 </body>
 </html>
