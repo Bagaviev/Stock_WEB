@@ -60,7 +60,7 @@
    }
   </style>
 <body>
-<title>Индикаторы - год</title>
+<title>Паттерны - год</title>
  <div class="top_menu">
     <table class="table_menu" align="center" border="1" cellpadding="1" cellspacing="1" style="width:700px">
         <tbody>
@@ -86,9 +86,9 @@
         <p style="margin:15px">Период агрегации:</p>
         <select size="1"; onchange="window.location.href=this.options[this.selectedIndex].value">
             <option selected value>Выбрать</option>
-            <option VALUE="\index.html">Год</option>
-            <option VALUE="\month.html">Месяц</option>
-            <option VALUE="\week.html">Неделя</option>
+            <option VALUE="\patterns.html">Год</option>
+<!--            <option VALUE="\month.html">Месяц</option>-->
+<!--            <option VALUE="\week.html">Неделя</option>-->
         </select>
         <p style="margin:15px">Финансовый инструмент:</p>
         <select size="1">
@@ -100,30 +100,25 @@
  </div>
 
  <div class="main_content">
-     <p style="text-align:center; margin-top:5px; margin-bottom:10px; font-size: 20px; font-family: Microsoft JhengHei Light;">Состояние рынка за выбранный период<br></p>
-     <p style="text-align:center; margin-top:5px; margin-bottom:5px"><img src="\static\main_y.png" alt="main_plot" width="700" height="280">
+     <p style="text-align:center; margin-top:5px; margin-bottom:10px; font-size: 20px; font-family: Microsoft JhengHei Light;">Паттерны "Голова и плечи"<br></p>
+     <p style="text-align:center; margin-top:5px; margin-bottom:5px"><img src="\static\hs_y.png" alt="hs_y" width="700" height="280">
      <p style="margin-top:5px; margin-bottom:5px; margin-left:7%; font-size: 12px; font-family: Microsoft JhengHei Light;">Обозначения:</p>
     <ul style="margin-top:5px; margin-left:7%; font-size: 12px; font-family: Microsoft JhengHei Light;">
-        <li>Close - цена закрытия актива</li>
-        <li>BBU - верхняя полоса Боллинджера</li>
-        <li>BBL - нижняя полоса Боллинджера</li>
-        <li>Short - быстрое экспоненциальное скользящее среднее (P=3)</li>
-        <li>Long - медленное экспоненциальное скользящее среднее (P=9)</li>
+        <li>Данный паттерн является разворотным. Если иммется его присутствие на последних периодах возможно серьезное изменение тренда.</li>
     </ul>
 
-    <p style="text-align:center; margin-top:5px; margin-bottom:10px; font-size: 20px; font-family: Microsoft JhengHei Light;">Осцилляторный индикатор за выбранный период<br></p>
-    <p style="text-align:center; margin-top:5px; margin-bottom:5px"><img src="\static\stoch_y.png" alt="stoch" width="700" height="280">
+    <p style="text-align:center; margin-top:5px; margin-bottom:10px; font-size: 20px; font-family: Microsoft JhengHei Light;">Паттерны "Нижний прямоугольник"<br></p>
+    <p style="text-align:center; margin-top:5px; margin-bottom:5px"><img src="\static\rbot_y.png" alt="rbot_y" width="700" height="280">
     <p style="margin-top:5px; margin-bottom:5px; margin-left:7%; font-size: 12px; font-family: Microsoft JhengHei Light;">Обозначения:</p>
     <ul style="margin-top:5px; margin-left:7%; font-size: 12px; font-family: Microsoft JhengHei Light;">
-        <li>STHST_k - быстрая стохастическая кривая</li>
-        <li>STHST_d - медленная стохастическая кривая</li>
+        <li>Данный паттерн сигнализирует о предстоящем периоде консолидации.</li>
     </ul>
 
-    <p style="text-align:center; margin-top:5px; margin-bottom:10px; font-size: 20px; font-family: Microsoft JhengHei Light;">Индикатор OBV балансового объема за выбранный период<br></p>
-    <p style="text-align:center; margin-top:5px; margin-bottom:5px"><img src="\static\obv_y.png" alt="obv" width="700" height="280">
+    <p style="text-align:center; margin-top:5px; margin-bottom:10px; font-size: 20px; font-family: Microsoft JhengHei Light;">Паттерны "Верхний треугольник"<br></p>
+    <p style="text-align:center; margin-top:5px; margin-bottom:5px"><img src="\static\ttop_y.png" alt="ttop_y" width="700" height="280">
     <p style="margin-top:5px; margin-bottom:5px; margin-left:7%; font-size: 12px; font-family: Microsoft JhengHei Light;">Обозначения:</p>
     <ul style="margin-top:5px; margin-left:7%; font-size: 12px; font-family: Microsoft JhengHei Light;">
-        <li>OBV - индекс объемов торгов</li>
+        <li>Данный паттерн сигнализирует о сохранении текущего тренда</li>
     </ul>
  </div>
 
