@@ -1,68 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
-<style>
-   body{
-    background-color: #fafcf5fe;
-   }
-    .top_menu {
-    height: 70px;
-    background: #ccc;
-    border: solid 1px black;
-   }
-    .table_menu {
-    position: absolute;
-    top: 7%; left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 10px;
-   }
-   .middle_block {
-    height: 220px;
-    background: #ccc;
-    margin-top: 5px;
-    border: solid 1px black;
-    position: relative;
-    text-align:center;
-   }
-    .left_middle {
-    height: 180px;
-    width: 180px;
-    background: #bee87bfe;
-    border: solid 1px black;
-    position: absolute;
-    top: 50%; left: 27%;
-    transform: translate(-50%,-50%);
-   }
-    .right_middle {
-    height: 180px;
-    width: 180px;
-    background: #bee87bfe;
-    border: solid 1px black;
-    position: absolute;
-    top: 50%; left: 73%;
-    transform: translate(-50%,-50%);
-   }
-    .main_content {
-    height: 1210px;
-    width: 60%;
-    background: #ccc;
-    border: solid 1px black;
-    left: 0;
-    margin: auto;
-    margin-top: 5px;
-   }
-    .footer {
-    height: 45px;
-    background: #ccc;
-    margin-top: 5px;
-    border: solid 1px black;
-    text-align: center;
-    padding-top:5px;
-   }
-  </style>
+<head>
+    <link rel="stylesheet" type="text/css" href="..\static\css\global.css">
+</head>
 <body>
 <title>Индикаторы - год</title>
  <div class="top_menu">
-    <table class="table_menu" align="center" border="1" cellpadding="1" cellspacing="1" style="width:700px">
+    <table class="table_menu" align="center" border="1" cellpadding="1" cellspacing="1" style="width:800px">
         <tbody>
             <tr>
                 <td style="text-align:center"><a href="\index.html">Индикаторы</a></td>
@@ -77,10 +21,11 @@
 
  <div class="middle_block">
     <h4 style="margin:5px">Финансовый инструмент: EUR-USD</h4>
-    <p style="margin:10px">Наши рекоммендации к торговле</p>
+    <p style="margin:10px">Наши рекомендации к торговле</p>
     <p style="text-align:center; margin-top:5px"><img src="\static\recommendation.png" alt="recommendation" width="380" height="150">
     <div class="left_middle">
-        Lorem ipsum dolor sit amet, consectetuer
+        <p style="margin:15px">Последнее значение:<br><br>{{ cls }}</p>
+        <p style="margin:15px">Индикатор актуальности:<br><br>{{ act }}</p>
     </div>
     <div class="right_middle">
         <p style="margin:15px">Период агрегации:</p>
