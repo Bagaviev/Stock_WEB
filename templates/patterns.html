@@ -6,7 +6,7 @@
 <body>
 <title>Паттерны - год</title>
  <div class="top_menu">
-    <table class="table_menu" align="center" border="1" cellpadding="1" cellspacing="1" style="width:800px">
+    <table class="table_menu" align="center" border="1" cellpadding="7" cellspacing="0" style="width:800px; font-size: 15px; font-family: Microsoft JhengHei Light; font-weight:bold; border-collapse:collapse; background-color:cyan">
         <tbody>
             <tr>
                 <td style="text-align:center"><a href="\index.html">Индикаторы</a></td>
@@ -20,22 +20,22 @@
  </div>
 
  <div class="middle_block">
-    <h4 style="margin:5px">Финансовый инструмент: EUR-USD</h4>
-    <p style="margin:10px">Наши рекомендации к торговле</p>
+    <h4 style="margin:5px; font-size: 17px; font-family: Microsoft JhengHei Light; font-weight:bold">Финансовый инструмент: EUR-USD</h4>
+    <p style="margin:5px; font-size: 10px; font-family: Microsoft JhengHei Light; font-weight:bold">Наши рекомендации к торговле</p>
     <p style="text-align:center; margin-top:5px"><img src="\static\recommendation.png" alt="recommendation" width="380" height="150">
     <div class="left_middle">
-        <p style="margin:15px">Последнее значение:<br><br>{{ cls }}</p>
-        <p style="margin:15px">Индикатор актуальности:<br><br>{{ act }}</p>
+     <p style="margin:20px; font-size: 12px; font-family: Microsoft JhengHei Light; font-weight:bold">Последнее значение:</p><b>{{ cls }}</b>
+     <p style="margin:20px; font-size: 12px; font-family: Microsoft JhengHei Light; font-weight:bold">Индикатор актуальности:</p><b>{{ act }}</p>
     </div>
-    <div class="right_middle">
-        <p style="margin:15px">Период агрегации:</p>
+        <div class="right_middle">
+        <p style="margin:20px; font-size: 12px; font-family: Microsoft JhengHei Light; font-weight:bold">Период агрегации:</p>
         <select size="1"; onchange="window.location.href=this.options[this.selectedIndex].value">
             <option selected value>Выбрать</option>
-            <option VALUE="\patterns.html">Год</option>
-<!--            <option VALUE="\month.html">Месяц</option>-->
-<!--            <option VALUE="\week.html">Неделя</option>-->
+            <option VALUE="\index.html">Год</option>
+            <option VALUE="\month.html">Месяц</option>
+            <option VALUE="\week.html">Неделя</option>
         </select>
-        <p style="margin:15px">Финансовый инструмент:</p>
+        <p style="margin:20px; font-size: 12px; font-family: Microsoft JhengHei Light; font-weight:bold">Финансовый инструмент:</p>
         <select size="1">
             <option VALUE="\index.html">EUR-USD</option>
             <option VALUE="\month.html">USD-RUB (разработка)</option>
@@ -67,7 +67,7 @@
     </ul>
  </div>
 
- <div class="footer">Биржевой портал. Сделано в МГТУ им.Н.Э.Баумана, кафедра ИУ5 в 2020 году.<br>Багавиев Б.И.</div>
+ <div class="footer" style="font-size: 15px; font-family: Microsoft JhengHei Light; font-weight:bold">Биржевой портал. Сделано в МГТУ им.Н.Э.Баумана, кафедра ИУ5 в 2020 году.<br>Багавиев Б.И.</div>
 
 </body>
 </html>
