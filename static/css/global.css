@@ -1,10 +1,10 @@
 body{
-	background-color: #fafcf5fe;
+	background-color: #f2e1ff;
+	height:100%;
 }
 .top_menu {
 	height: 70px;
-	background: #ccc;
-	border: solid 1px black;
+	background: #faffe0;
 }
 .table_menu {
 	position: absolute;
@@ -14,20 +14,19 @@ body{
 }
 td:hover {
     color: #000000;
-    background-color: red;
+    background-color: #f2e1ff;
 }
 .middle_block {
 	height: 220px;
-	background: #ccc;
-	margin-top: 5px;
-	border: solid 1px black;
+	background: #faffe0;
+	margin-top: 10px;
 	position: relative;
 	text-align:center;
 }
 .left_middle {
 	height: 180px;
 	width: 180px;
-	background: #bee87bfe;
+	background: #grey71;
 	border: solid 1px black;
 	position: absolute;
 	top: 50%; left: 27%;
@@ -36,7 +35,7 @@ td:hover {
 .right_middle {
 	height: 180px;
 	width: 180px;
-	background: #bee87bfe;
+	background: #grey71;
 	border: solid 1px black;
 	position: absolute;
 	top: 50%; left: 73%;
@@ -45,17 +44,15 @@ td:hover {
 .main_content {
 	height: 1210px;
 	width: 60%;
-	background: #ccc;
-	border: solid 1px black;
+	background: #faffe0;
 	left: 0;
 	margin: auto;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 .footer {
 	height: 45px;
-	background: #ccc;
-	margin-top: 5px;
-	border: solid 1px black;
+	background: #faffe0;
+	margin-top: 10px;
 	text-align: center;
 	padding-top:5px;
 }
